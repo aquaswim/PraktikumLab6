@@ -1,19 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.amikom.bayuss.MainActivity">
+    tools:context="com.example.amikom.bayuss.MainActivity"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="vertical">
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="24sp" />
 
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-</RelativeLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <Button
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="wedus" />
+
+        <Button
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <Button
+            android:layout_row="0"
+            android:layout_column="3" />
+
+        <Button
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_row="1"
+            android:layout_column="2" />
+
+        <Button
+            android:layout_row="1"
+            android:layout_column="3" />
+
+        <Button
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_row="2"
+            android:layout_column="2" />
+
+        <Button
+            android:layout_row="2"
+            android:layout_column="3" />
+
+        <Button
+            android:layout_row="3"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_row="3"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_row="3"
+            android:layout_column="2" />
+
+        <Button
+            android:layout_row="3"
+            android:layout_column="3" />
+    </GridLayout>
+</LinearLayout>
